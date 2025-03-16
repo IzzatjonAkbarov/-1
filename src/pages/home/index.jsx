@@ -1,10 +1,11 @@
 import React from "react";
 import Showcase from "./showcase";
+import Famous from "./famous";
 
 const Home = () => {
   return (
     <div>
-      <Showcase />
+      <Famous />
     </div>
   );
 };

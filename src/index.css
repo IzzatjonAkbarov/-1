@@ -1,1 +1,31 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+.container1 {
+  width: 90%;
+  margin: auto;
+}
+@media (min-width: 1600px) {
+  .container1 {
+    width: 1500px;
+    margin: auto;
+  }
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  @apply w-3 h-3 bg-gray-400 opacity-50 transition-all; /* Default color */
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  @apply bg-[#ec8f32] opacity-100 scale-125; /* Active bullet color */
+}
+.ellipsis {
+  white-space: nowrap; /* Matnni bitta qatorda ushlab turadi */
+  overflow: hidden; /* Ortib ketgan matnni yashiradi */
+  text-overflow: ellipsis; /* Matn oxiriga "..." qo‘shadi */
+  max-width: 200px; /* Maksimal kenglikni belgilash */
+}
